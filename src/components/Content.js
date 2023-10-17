@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Content.css';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
+// import DialogTitle from '@mui/material/DialogTitle';
 import Masonry from 'react-masonry-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import the "times" icon
