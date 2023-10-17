@@ -1,0 +1,51 @@
+/* Content.css */
+
+.my-masonry-grid {
+    display: flex;
+    margin-left: -25px; /* This sets the gap between items */
+    width: auto;
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 25px; /* Adjust this to match the gap between items */
+    background-clip: padding-box;
+  }
+  
+  .photo-item {
+    background-color: #fff; /* Set the background color for each item */
+    border-radius: 10px; /* Add rounded corners to each item */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for each item */
+    /* margin-bottom: 25px; Set the margin between items */
+  }
+  .photo{
+    border-radius: 10px; /* Add rounded corners to each item */
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    width: 30px; /* Adjust the size of the user avatar */
+    height: 30px;
+    border-radius: 50%; /* Make it a circle */
+    margin-right: 10px; /* Add space between avatar and user info */
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  .blacki{
+    background-color:#141414;
+  }
+  .grey {
+    color: grey;
+  }
+  .colp{
+    background-color: #232323;
+  }
+  .over{
+    color: #C4C4C4;
+  }
+  
