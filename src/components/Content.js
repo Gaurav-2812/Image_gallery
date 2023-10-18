@@ -6,7 +6,7 @@ import DialogContent from '@mui/material/DialogContent';
 // import DialogTitle from '@mui/material/DialogTitle';
 import Masonry from 'react-masonry-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faTimes } from '@fortawesome/free-solid-svg-icons'; // Import the "times" icon
+import { faThumbsUp} from '@fortawesome/free-solid-svg-icons'; // Import the "times" icon
 
 function Content(props) {
   const [photograph, setPhotograph] = useState('');
@@ -105,7 +105,7 @@ function Content(props) {
 
       <div class={`min-h-screen ${isChecked ? 'colp' : 'bg-gray-100'} flex flex-col`}>
         <div className="bg-[url('./images/background.png')] p-20 bg-cover mt-20">
-          <div>
+          <div className='text-center'>
             <h1 className="font-montserrat font-semibold text-2xl lg:text-3xl text-white">
               Download High Quality Images By Creators
             </h1>
