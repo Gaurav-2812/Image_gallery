@@ -68,7 +68,7 @@ function Content(props) {
   return (
     <>
       <nav className={`fixed top-0 left-0 z-10 right-0 flex justify-between px-20 py-6 items-center ${isChecked ? 'colp' : 'bg-white'}`}>
-        <h1 className={`text-xl font-bold ${isChecked ? 'text-white' : 'text-gray-700'}`}>{props.heading}</h1>
+        <h1 className={`transition ease-in-out delay-1500 duration-1000 text-xl font-bold ${isChecked ? 'text-white' : 'text-gray-700'}`}>{props.heading}</h1>
         <div className="flex items-center ml-10">
           <div className='flex items-center rounded-full bg-gray-100 ml-20'>
             <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-5 pt=0.5 m-2 ${isChecked ? 'text-gray-400' : 'text-gray-600'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,21 +79,21 @@ function Content(props) {
         </div>
         <div className="flex items-center justify-between">
           <ul className="flex justify-between items-center space-x-6">
-            <li className={`font-semibold ${isChecked ? 'text-white' : 'text-gray-700'}`}>Home</li>
-            <li className={`font-semibold ${isChecked ? 'text-white' : 'text-gray-700'}`}>Articles</li>
+            <li className={`transition ease-in-out delay-1500 duration-1000 font-semibold ${isChecked ? 'text-white' : 'text-gray-700'}`}>Home</li>
+            <li className={`transition ease-in-out delay-1500 duration-1000 font-semibold ${isChecked ? 'text-white' : 'text-gray-700'}`}>Articles</li>
             <li>
               <label className='themeSwitcherTwo relative inline-flex cursor-pointer select-none items-center mt-2'>
                 <input type='checkbox' checked={isChecked} onChange={handleCheckboxChange} className='sr-only' />
                 <span className=''>
-                  <svg className={`h-6 w-6 ${isChecked ? 'text-gray-400' : 'text-gray-700'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className={`transition ease-in-out delay-1500 duration-1000 h-6 w-6 ${isChecked ? 'text-gray-400' : 'text-gray-700'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </span>
-                <span className={`slider mx-4 flex h-6 w-[60px] items-center rounded-full p-1 duration-200 ${!isChecked ? 'bg-gray-400' : 'bg-[#efeff1]'}`}>
-                  <span className={`dot h-4 w-6 rounded-full ${isChecked ? 'bg-gray-600' : 'bg-white'} duration-200 ${isChecked ? 'translate-x-[28px]' : ''}`}></span>
+                <span className={`transition ease-in-out delay-1500 slider mx-4 flex h-6 w-[60px] items-center rounded-full p-1 duration-200 ${!isChecked ? 'bg-gray-400' : 'bg-[#efeff1]'}`}>
+                  <span className={`transition ease-in-out delay-1500 duration-1000 dot h-4 w-6 rounded-full ${isChecked ? 'bg-gray-600' : 'bg-white'} duration-200 ${isChecked ? 'translate-x-[28px]' : ''}`}></span>
                 </span>
                 <span className=''>
-                  <svg className={`h-6 w-6 ${isChecked ? 'text-white' : 'text-gray-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className={`transition ease-in-out delay-1500 duration-1000 h-6 w-6 ${isChecked ? 'text-white' : 'text-gray-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                   </svg>
                 </span>
@@ -103,7 +103,7 @@ function Content(props) {
         </div>
       </nav>
 
-      <div class={`min-h-screen ${isChecked ? 'colp' : 'bg-gray-100'} flex flex-col`}>
+      <div class={`transition ease-in-out delay-1500 duration-1000 min-h-screen ${isChecked ? 'colp' : 'bg-gray-100'} flex flex-col`}>
         <div className="bg-[url('./images/background.png')] p-20 bg-cover mt-20">
           <div>
             <h1 className="font-montserrat font-semibold text-2xl lg:text-3xl text-white">
