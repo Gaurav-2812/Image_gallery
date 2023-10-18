@@ -103,7 +103,7 @@ function Content(props) {
         </div>
       </nav>
 
-      <div class={`transition ease-in-out delay-1500 duration-1000 min-h-screen ${isChecked ? 'colp' : 'bg-gray-100'} flex flex-col`}>
+      <div class={`min-h-screen ${isChecked ? 'colp' : 'bg-gray-100'} flex flex-col`}>
         <div className="bg-[url('./images/background.png')] p-20 bg-cover mt-20">
           <div>
             <h1 className="font-montserrat font-semibold text-2xl lg:text-3xl text-white">
